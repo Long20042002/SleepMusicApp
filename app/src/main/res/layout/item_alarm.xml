@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="12dp"
+    android:background="#021039"
+    android:id="@+id/swipeLayout"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <LinearLayout
+        android:id="@+id/lnDeleteAlarm"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/custom_bg_delete_alarm"
+        android:orientation= "vertical">
+        
+        <ImageView
+            android:src="@drawable/ic_delete_favorite"
+            android:layout_width="18dp"
+            android:layout_height="18dp"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cstrItemAlarmLayot"
+        android:background="@drawable/custom_shape_of_list_alarm"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTimeAlarm"
+            android:text="@string/time_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="21dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvNameMusicAlarm"
+            android:text="@string/my_new_mix"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:layout_marginStart="21dp"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTimeAlarm" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:checked="false"
+            android:id="@+id/swOnOffAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:thumb="@drawable/custom_thumb_switch"
+            app:track="@drawable/custom_track_sw"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/tvMonday"
+            android:text="M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_of_alarm"
+
+            app:layout_constraintRight_toLeftOf="@+id/tvTuesday"
+            app:layout_constraintBottom_toBottomOf="@+id/swOnOffAlarm"
+            app:layout_constraintTop_toTopOf="@id/swOnOffAlarm"/>
+
+        <ImageView
+            android:id="@+id/ivMonday"
+            android:src="@drawable/ic_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toTopOf="@id/tvMonday"
+            app:layout_constraintLeft_toLeftOf="@id/tvMonday"
+            app:layout_constraintRight_toRightOf="@id/tvMonday"/>
+
+        <TextView
+            android:id="@+id/tvTuesday"
+            android:text="T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_of_alarm"
+
+            app:layout_constraintRight_toLeftOf="@+id/tvWednesday"
+            app:layout_constraintBottom_toBottomOf="@+id/swOnOffAlarm"
+            app:layout_constraintTop_toTopOf="@id/swOnOffAlarm"/>
+
+        <ImageView
+            android:id="@+id/ivTuesday"
+            android:src="@drawable/ic_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toTopOf="@id/tvTuesday"
+            app:layout_constraintLeft_toLeftOf="@id/tvTuesday"
+            app:layout_constraintRight_toRightOf="@id/tvTuesday"/>
+
+        <TextView
+            android:id="@+id/tvWednesday"
+            android:text="W"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_of_alarm"
+
+            app:layout_constraintRight_toLeftOf="@+id/tvThursday"
+            app:layout_constraintBottom_toBottomOf="@+id/swOnOffAlarm"
+            app:layout_constraintTop_toTopOf="@id/swOnOffAlarm"/>
+
+        <ImageView
+            android:id="@+id/ivWednesday"
+            android:src="@drawable/ic_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toTopOf="@id/tvWednesday"
+            app:layout_constraintLeft_toLeftOf="@id/tvWednesday"
+            app:layout_constraintRight_toRightOf="@id/tvWednesday"/>
+
+        <TextView
+            android:id="@+id/tvThursday"
+            android:text="T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_of_alarm"
+            android:textColor="#FFA88A"
+
+            app:layout_constraintRight_toLeftOf="@+id/tvFriday"
+            app:layout_constraintBottom_toBottomOf="@+id/swOnOffAlarm"
+            app:layout_constraintTop_toTopOf="@id/swOnOffAlarm"/>
+
+        <ImageView
+            android:id="@+id/ivThursday"
+            android:src="@drawable/ic_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            app:layout_constraintBottom_toTopOf="@id/tvThursday"
+            app:layout_constraintLeft_toLeftOf="@id/tvThursday"
+            app:layout_constraintRight_toRightOf="@id/tvThursday"/>
+
+        <TextView
+            android:id="@+id/tvFriday"
+            android:text="F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_of_alarm"
+            android:textColor="#FFA88A"
+
+            app:layout_constraintRight_toLeftOf="@+id/tvSaturday"
+            app:layout_constraintBottom_toBottomOf="@+id/swOnOffAlarm"
+            app:layout_constraintTop_toTopOf="@id/swOnOffAlarm"/>
+
+        <ImageView
+            android:id="@+id/ivFriday"
+            android:src="@drawable/ic_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            app:layout_constraintBottom_toTopOf="@id/tvFriday"
+            app:layout_constraintLeft_toLeftOf="@id/tvFriday"
+            app:layout_constraintRight_toRightOf="@id/tvFriday"/>
+
+        <TextView
+            android:id="@+id/tvSaturday"
+            android:text="S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_of_alarm"
+
+            app:layout_constraintRight_toLeftOf="@+id/tvSunday"
+            app:layout_constraintBottom_toBottomOf="@+id/swOnOffAlarm"
+            app:layout_constraintTop_toTopOf="@id/swOnOffAlarm"/>
+
+        <ImageView
+            android:id="@+id/ivSarturday"
+            android:src="@drawable/ic_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toTopOf="@id/tvSaturday"
+            app:layout_constraintLeft_toLeftOf="@id/tvSaturday"
+            app:layout_constraintRight_toRightOf="@id/tvSaturday"/>
+
+        <TextView
+            android:id="@+id/tvSunday"
+            android:text="S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_of_alarm"
+
+            app:layout_constraintRight_toLeftOf="@+id/swOnOffAlarm"
+            app:layout_constraintBottom_toBottomOf="@+id/swOnOffAlarm"
+            app:layout_constraintTop_toTopOf="@id/swOnOffAlarm"/>
+
+        <ImageView
+            android:id="@+id/ivSunday"
+            android:src="@drawable/ic_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toTopOf="@id/tvSunday"
+            app:layout_constraintLeft_toLeftOf="@id/tvSunday"
+            app:layout_constraintRight_toRightOf="@id/tvSunday"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

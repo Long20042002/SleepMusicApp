@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#02103A"
+    android:id="@+id/cstrItemAlarmSound"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="@string/my_alarm_mix"
+        android:id="@+id/tvNameAlarmSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_of_check_box_dialog_setting"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/ckbAlarmMix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/check_box_of_dialog_setting"
+        android:paddingEnd="10dp"
+
+        app:layout_constraintTop_toTopOf="@+id/tvNameAlarmSound"
+        app:layout_constraintBottom_toBottomOf="@id/tvNameAlarmSound"
+        app:layout_constraintStart_toStartOf="@id/tvNameAlarmSound"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

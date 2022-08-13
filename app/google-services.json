@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "141186143790",
+    "project_id": "appsleep-prox-longnh",
+    "storage_bucket": "appsleep-prox-longnh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141186143790:android:29aeef091cf98a3f9631bf",
+        "android_client_info": {
+          "package_name": "com.prox.appsleep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141186143790-mbhda24vhdneolib6pc8qdd4n2v7il6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCdRE_RLBO_UsQfXPZaFAdcrz7zI2ReGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141186143790-mbhda24vhdneolib6pc8qdd4n2v7il6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="@drawable/custom_dialog_update_favorite"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="@string/select_szoone"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/tvSelectAlarmSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tvCKB1"
+            style="@style/text_of_check_box_dialog_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_minutes"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/ckb1MSzoone"
+            style="@style/check_box_of_dialog_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+
+            app:layout_constraintBottom_toBottomOf="@id/tvCKB1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvCKB1"
+            app:layout_constraintTop_toTopOf="@+id/tvCKB1" />
+
+        <TextView
+            android:id="@+id/tvCKB2"
+            style="@style/text_of_check_box_dialog_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_minutes"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCKB1" />
+
+        <CheckBox
+            android:id="@+id/ckb3MSzoone"
+            style="@style/check_box_of_dialog_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+
+            app:layout_constraintBottom_toBottomOf="@id/tvCKB2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvCKB2"
+            app:layout_constraintTop_toTopOf="@+id/tvCKB2" />
+
+        <TextView
+            android:id="@+id/tvCKB3"
+            style="@style/text_of_check_box_dialog_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_minutes"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCKB2" />
+
+        <CheckBox
+            android:id="@+id/ckb5MSzoone"
+            style="@style/check_box_of_dialog_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+
+            app:layout_constraintBottom_toBottomOf="@id/tvCKB3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvCKB3"
+            app:layout_constraintTop_toTopOf="@+id/tvCKB3" />
+
+        <TextView
+            android:id="@+id/tvCKB4"
+            style="@style/text_of_check_box_dialog_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_7_minutes"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCKB3" />
+
+        <CheckBox
+            android:id="@+id/ckb7MSzoone"
+            style="@style/check_box_of_dialog_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+
+            app:layout_constraintBottom_toBottomOf="@id/tvCKB4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvCKB4"
+            app:layout_constraintTop_toTopOf="@+id/tvCKB4" />
+
+        <TextView
+            android:id="@+id/tvCKB5"
+            style="@style/text_of_check_box_dialog_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_10_minutes"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCKB4" />
+
+        <CheckBox
+            android:id="@+id/ckb10MSzoone"
+            style="@style/check_box_of_dialog_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+
+            app:layout_constraintBottom_toBottomOf="@id/tvCKB5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvCKB5"
+            app:layout_constraintTop_toTopOf="@+id/tvCKB5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvDoneSelectSzoone"
+        android:text="@string/done"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button_add_favorite_music"
+        android:layout_width="200dp"
+        android:layout_height="42dp"/>
+
+    <TextView
+        android:id="@+id/tvBackSelectSzoone"
+        android:text="@string/back"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="26dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

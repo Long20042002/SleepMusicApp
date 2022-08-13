@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/layout_bg_of_item_favorite"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp">
+
+
+        <ImageView
+            android:id="@+id/ivPlayFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNameListMix"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginStart="13dp"
+            android:text="@string/my_mix_lorem_ipsum"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+            app:layout_constraintLeft_toRightOf="@+id/ivPlayFavorite"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvFavoriteListMix"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ivPlayFavorite"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameListMix" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_gravity="right"
+        android:background="@drawable/custom_shape_favorite"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ivEditFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/ivDeleteFavorite"
+            android:background="@drawable/custom_shape_edit_favorite"
+            android:src="@drawable/ic_edit_favorite" />
+
+        <ImageView
+            android:id="@+id/ivDeleteFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/custom_shape_delete_favorite"
+            android:src="@drawable/ic_delete_favorite" />
+    </RelativeLayout>
+
+</LinearLayout>

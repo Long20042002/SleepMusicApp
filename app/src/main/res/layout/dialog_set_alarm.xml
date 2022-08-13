@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:layout_width="343dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    android:background="@drawable/custom_layout_of_set_time_off_music">
+
+    <ImageView
+        android:id="@+id/ivCloseDialogSetAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_closedialog"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/npHourAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/NumberPickerTheme"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+        app:layout_constraintRight_toLeftOf="@+id/tvCenter2Np"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCloseDialogSetAlarm"/>
+
+    <TextView
+        android:id="@+id/tvCenter2Np"
+        android:text="@string/center_of_np"
+        android:padding="10dp"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintRight_toLeftOf="@+id/npMinutesAlarm"
+        app:layout_constraintTop_toTopOf="@+id/npHourAlarm"
+        app:layout_constraintBottom_toBottomOf="@+id/npHourAlarm"
+        app:layout_constraintLeft_toRightOf="@+id/npHourAlarm"/>
+
+    <NumberPicker
+        android:id="@+id/npMinutesAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:theme="@style/NumberPickerTheme"
+
+        app:layout_constraintLeft_toRightOf="@+id/tvCenter2Np"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCloseDialogSetAlarm"/>
+
+    <LinearLayout
+        android:id="@+id/lnSelectDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_shape_set_day_alarm"
+        android:layout_marginTop="27dp"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@id/npHourAlarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rclDayAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cstrSetAlarmMix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+
+        app:layout_constraintRight_toRightOf="@id/lnSelectDay"
+        app:layout_constraintLeft_toLeftOf="@id/lnSelectDay"
+        app:layout_constraintTop_toBottomOf="@id/lnSelectDay">
+
+        <TextView
+            android:id="@+id/tvAlarmSound"
+            android:text="@string/alarm_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvNameOfMixAlarm"
+            android:text="@string/my_alarm_mix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+
+            app:layout_constraintTop_toBottomOf="@id/tvAlarmSound"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:src="@drawable/ic_extend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNameOfMixAlarm"
+            app:layout_constraintTop_toTopOf="@id/tvAlarmSound"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cstrVibration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintRight_toRightOf="@id/cstrSetAlarmMix"
+        app:layout_constraintLeft_toLeftOf="@id/cstrSetAlarmMix"
+        app:layout_constraintTop_toBottomOf="@+id/cstrSetAlarmMix">
+
+        <TextView
+            android:id="@+id/tvVibration"
+            android:text="@string/vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="@id/swVibration"
+            app:layout_constraintTop_toTopOf="@id/swVibration"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swVibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:thumb="@drawable/custom_thumb_switch"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cstrSetSnooze"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+
+        app:layout_constraintRight_toRightOf="@id/cstrVibration"
+        app:layout_constraintLeft_toLeftOf="@id/cstrVibration"
+        app:layout_constraintTop_toBottomOf="@id/cstrVibration">
+
+        <TextView
+            android:id="@+id/tvSnooze"
+            android:text="@string/snooze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvTimeSnooze"
+            android:text="@string/time_off_music_5_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+
+            app:layout_constraintTop_toBottomOf="@id/tvSnooze"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:src="@drawable/ic_extend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTimeSnooze"
+            app:layout_constraintTop_toTopOf="@id/tvSnooze"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvSetAlarm"
+        android:text="@string/set_alarm"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_add_favorite_music"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+
+        app:layout_constraintTop_toBottomOf="@id/cstrSetSnooze"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvRemoveAlarm"
+        android:text="@string/cancel"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+
+        app:layout_constraintTop_toBottomOf="@id/tvSetAlarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

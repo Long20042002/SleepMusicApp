@@ -1,0 +1,119 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion '30.0.3'
+
+    defaultConfig {
+        applicationId "com.prox.appsleep"
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        setProperty("archivesBaseName", "v$versionName($versionCode)appsleep")
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'AppSleep'
+            keyPassword 'prox@123456'
+            storeFile file('AppSleep.jks')
+            storePassword 'prox@123456'
+        }
+
+        release {
+            keyAlias 'AppSleep'
+            keyPassword 'prox@123456'
+            storeFile file('AppSleep.jks')
+            storePassword 'prox@123456'
+        }
+    }
+
+    buildTypes {
+        debug {
+            resValue "string", "id_app_ad", "ca-app-pub-3940256099942544~3347511713"
+            resValue "string", "id_open_app", "ca-app-pub-3940256099942544/3419835294"
+
+            resValue "string", "id_interstitial_splash", "ca-app-pub-3940256099942544/1033173712"
+
+            resValue "string", "id_banner", "ca-app-pub-3940256099942544/6300978111"
+
+            resValue "string", "id_native_favorite", "ca-app-pub-3940256099942544/2247696110"
+
+            resValue "string", "id_interstitial_favorite_menu", "ca-app-pub-3940256099942544/1033173712"
+
+            signingConfig signingConfigs.debug
+
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            resValue "string", "id_app_ad", "ca-app-pub-3548016532531500~9236463597"
+            resValue "string", "id_open_app", "ca-app-pub-3548016532531500/3364355669"
+
+            resValue "string", "id_interstitial_splash", "ca-app-pub-3548016532531500/3967840956"
+
+            resValue "string", "id_native_favorite", "ca-app-pub-3548016532531500/6418728560"
+            resValue "string", "id_banner", "ca-app-pub-3548016532531500/7136929778"
+
+            resValue "string", "id_interstitial_favorite_menu", "ca-app-pub-3548016532531500/3792565223"
+
+            signingConfig signingConfigs.release
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    implementation 'com.google.android.material:material:1.5.0'
+
+    implementation "androidx.media:media:1.6.0"
+
+    def room_version = "2.4.2"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    implementation 'com.github.hellowordapp:prox-utils:1.2.0'
+
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+
+    implementation platform('com.google.firebase:firebase-bom:30.2.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-config'
+
+}

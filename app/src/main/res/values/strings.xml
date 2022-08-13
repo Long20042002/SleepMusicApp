@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">AppSleep</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_alarm_clock">Alarm Clock</string>
+    <string name="my_new_mix">My new mix</string>
+
+    <!--Set time off music-->
+    <string name="title_of_dialog_set_time_off_music_default">Set time duration</string>
+    <string name="time_off_music_default">Custom duration</string>
+    <string name="no_time_off_music">Remove timer</string>
+    <string name="time_off_music_5_m">5 minutes</string>
+    <string name="time_off_music_10_m">10 minutes</string>
+    <string name="time_off_music_15_m">15 minutes</string>
+    <string name="time_off_music_20_m">20 minutes</string>
+    <string name="time_off_music_30_m">30 minutes</string>
+    <string name="time_off_music_40_m">40 minutes</string>
+    <string name="time_off_music_1_h">1 hours</string>
+    <string name="time_off_music_2_h">2 hours</string>
+    <string name="name_off_tv_start_timer">Start time</string>
+
+    <!--Update favorite list music-->
+    <string name="title_of_dialog_update_favorite_music">Enter a list name :</string>
+    <string name="title_of_dialog_update_favorite_music_2">Enter your favorite playlist name.</string>
+    <string name="hint_of_edit_name_of_list_music_favorite">Enter a list name</string>
+    <string name="name_of_button_update">Update</string>
+    <string name="custom_duration">Custom duration</string>
+    <string name="name_of_button_set_time_start_timer">Set timer</string>
+    <string name="center_of_np">:</string>
+    <string name="name_of_music">Name of music</string>
+    <string name="city_and_household">City And Household</string>
+    <string name="my_mix_lorem_ipsum">My Mix Lorem Ipsum</string>
+    <string name="nature_and_forest">Nature And Forest</string>
+    <string name="rain">Rain</string>
+    <string name="relax_and_meditation">Relax And Meditation</string>
+    <string name="asmr">ASMR</string>
+    <string name="title_of_add_favorite_list_music">Enter a list name :</string>
+    <string name="title_of_add_favorite_list_music_2">Enter your favorite playlist name.</string>
+    <string name="hint_of_edit_add_music">Enter a list name</string>
+    <string name="name_of_button_add_music">Add</string>
+    <string name="title_of_alram_screen">Set Up Your First Alarm</string>
+    <string name="text_of_button_set_alram">Set Alram</string>
+    <string name="setting_setting_screen">Setting</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="upgrade_to_premium">Upgrade to Premium</string>
+    <string name="language">Language</string>
+    <string name="language_setting">English</string>
+    <string name="custom_fade_out_duration_is_only_used_with_active_timer">Custom fade out duration is only used with active timer</string>
+    <string name="_10_seconds">10 Seconds</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="terms_of_service">Rate app</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="acknowledgements">Acknowledgements</string>
+    <string name="fade_out_duration">Fade out duration</string>
+    <string name="delete_track_favorite_music">Delete track</string>
+    <string name="enter_name">Enter name</string>
+    <string name="fade_out_duration_dialog">Fade out duration</string>
+    <string name="english">English</string>
+    <string name="time_alarm">05:30</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="remove_alarm">Remove Alarm</string>
+    <string name="cancel">Cancel</string>
+    <string name="alarm_sound">Alarm Sound</string>
+    <string name="my_alarm_mix">My Alarm Mix</string>
+    <string name="vibration">Vibration</string>
+    <string name="snooze">Snooze</string>
+    <string name="select_alarm_sound">Select Alarm Sound</string>
+    <string name="done">Done</string>
+    <string name="back">Back</string>
+    <string name="_1_minutes">1 Minutes</string>
+    <string name="select_szoone">Select Snooze</string>
+    <string name="_3_minutes">3 Minutes</string>
+    <string name="_10_minutes">10 Minutes</string>
+    <string name="_7_minutes">7 Minutes</string>
+    <string name="_5_minutes">5 Minutes</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="set_up_alarm">Set Up Alarm</string>
+    <string name="sleep_music">Sleep Music</string>
+    <string name="alarm">Alarm</string>
+    <string name="turn_off">Turn Off</string>
+
+
+</resources>

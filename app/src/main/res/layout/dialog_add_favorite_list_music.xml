@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/custom_dialog_add_favorite"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="@string/title_of_add_favorite_list_music"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="@string/title_of_add_favorite_list_music_2"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:counterTextColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edNameFavoriteMusicList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:textColor="@color/white"
+            android:hint="@string/hint_of_edit_add_music"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvAddFavoriteMusic"
+        android:text="@string/name_of_button_add_music"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:background="@drawable/custom_button_add_favorite_music"
+        android:layout_width="70dp"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

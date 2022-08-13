@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.prox.appsleep.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.prox.appsleep.ui.favorite.FavoriteFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/fragment_favorite" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_alarm_clock"
+        android:name="com.prox.appsleep.ui.alarmclock.AlarmClockFragment"
+        android:label="@string/title_alarm_clock"
+        tools:layout="@layout/fragment_alarm_clock" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.prox.appsleep.ui.setting.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_setting">
+    </fragment>
+</navigation>

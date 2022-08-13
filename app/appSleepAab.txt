@@ -1,0 +1,4 @@
+keyAlias 'AppSleep'
+            keyPassword 'prox@123456'
+            storeFile file('AppSleep.jks')
+            storePassword 'prox@123456'

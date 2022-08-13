@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/custom_dialog_update_favorite"
+    android:paddingBottom="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/viewTop"
+        android:src="@drawable/bg_top_dialog_of_fragment_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="304:129"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleOfDialogSetting"
+        android:text="@string/fade_out_duration_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_of_dialog_setting"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTop"/>
+    
+    <TextView
+        android:text="@string/english"
+        android:id="@+id/tvCKB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_of_check_box_dialog_setting"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCKB1"/>
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/check_box_of_dialog_setting"
+        android:paddingEnd="10dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvCKB2"
+        app:layout_constraintTop_toTopOf="@+id/tvCKB2"
+        app:layout_constraintBottom_toBottomOf="@id/tvCKB2"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:text="@string/english"
+        android:id="@+id/tvCKB3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_of_check_box_dialog_setting"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCKB2"/>
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/check_box_of_dialog_setting"
+        android:paddingEnd="10dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvCKB3"
+        app:layout_constraintTop_toTopOf="@+id/tvCKB3"
+        app:layout_constraintBottom_toBottomOf="@id/tvCKB3"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:text="@string/english"
+        android:id="@+id/tvCKB4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_of_check_box_dialog_setting"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCKB3"/>
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/check_box_of_dialog_setting"
+        android:paddingEnd="10dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvCKB4"
+        app:layout_constraintTop_toTopOf="@+id/tvCKB4"
+        app:layout_constraintBottom_toBottomOf="@id/tvCKB4"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:text="@string/english"
+        android:id="@+id/tvCKB5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_of_check_box_dialog_setting"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCKB4"/>
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/check_box_of_dialog_setting"
+        android:paddingEnd="10dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvCKB5"
+        app:layout_constraintTop_toTopOf="@+id/tvCKB5"
+        app:layout_constraintBottom_toBottomOf="@id/tvCKB5"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:text="@string/english"
+        android:id="@+id/tvCKB6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_of_check_box_dialog_setting"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCKB5"/>
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/check_box_of_dialog_setting"
+        android:paddingEnd="10dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvCKB6"
+        app:layout_constraintTop_toTopOf="@+id/tvCKB6"
+        app:layout_constraintBottom_toBottomOf="@id/tvCKB6"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:text="@string/english"
+        android:id="@+id/tvCKB7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_of_check_box_dialog_setting"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCKB6"/>
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/check_box_of_dialog_setting"
+        android:paddingEnd="10dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvCKB7"
+        app:layout_constraintTop_toTopOf="@+id/tvCKB7"
+        app:layout_constraintBottom_toBottomOf="@id/tvCKB7"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:text="@string/english"
+        android:id="@+id/tvCKB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_of_check_box_dialog_setting"
+        android:layout_marginTop="16dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleOfDialogSetting"/>
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/check_box_of_dialog_setting"
+        android:paddingEnd="10dp"
+
+        app:layout_constraintTop_toTopOf="@+id/tvCKB1"
+        app:layout_constraintBottom_toBottomOf="@id/tvCKB1"
+        app:layout_constraintStart_toStartOf="@id/tvCKB1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lnItemPlayMusic"
+        android:background="@drawable/custom_shape_icon_category_music_playing"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ivVolumePlayMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivItemPlayMusic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_raintwater" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivVolumePlayMusic"
+        android:src="@drawable/ic_volume"
+        android:layout_marginStart="15dp"
+
+        app:layout_constraintTop_toTopOf="@+id/lnItemPlayMusic"
+        app:layout_constraintBottom_toBottomOf="@id/lnItemPlayMusic"
+        app:layout_constraintRight_toLeftOf="@+id/sbVolumePlayMusic"
+        app:layout_constraintLeft_toRightOf="@+id/lnItemPlayMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:id="@+id/sbVolumePlayMusic"
+        android:layout_marginStart="-10dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="@+id/ivVolumePlayMusic"
+        app:layout_constraintLeft_toRightOf="@+id/ivVolumePlayMusic"
+        app:layout_constraintBottom_toBottomOf="@+id/ivVolumePlayMusic"
+        app:layout_constraintRight_toLeftOf="@+id/ivDeleteItemPlayMusic"
+        app:layout_constraintWidth_percent="0.7"
+        android:progress="50"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:progressDrawable="@drawable/custom_shape_seekbar"
+        android:thumb="@drawable/custom_thumb_of_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivDeleteItemPlayMusic"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="@+id/sbVolumePlayMusic"
+        app:layout_constraintBottom_toBottomOf="@+id/sbVolumePlayMusic"
+        app:layout_constraintLeft_toRightOf="@+id/sbVolumePlayMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_delete_music_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

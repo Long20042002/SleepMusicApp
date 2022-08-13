@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:background="@drawable/custom_dialog_update_favorite"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="@string/select_alarm_sound"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/tvSelectAlarmSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvSelectAlarmMix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvDoneSelectAlarm"
+        android:text="@string/done"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button_add_favorite_music"
+        android:layout_width="200dp"
+        android:layout_height="42dp"/>
+
+    <TextView
+        android:id="@+id/tvBackSelectAlarm"
+        android:text="@string/back"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="26dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
